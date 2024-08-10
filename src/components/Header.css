@@ -1,0 +1,101 @@
+.header {
+  background: #ffffff;
+  padding: 0 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative; /* For positioning social media icons */
+}
+
+.header-top {
+  display: flex;
+  justify-content: flex-end; /* Align social media icons to the right */
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd; /* Separator line */
+}
+
+.social-media {
+  display: flex;
+  gap: 15px; /* Space between social media icons */
+}
+
+.social-media a {
+  color: #333;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+  color: #007bff; /* Highlight color on hover */
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.logo {
+  flex: 0;
+}
+
+.header-section {
+  text-align: center;
+
+}
+
+.header-section p {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.nav {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+}
+
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+ 
+}
+
+.nav li {
+  margin: 0 40px;
+  font-weight: bold;
+  
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.4rem;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #415e7d;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav {
+    margin-top: 10px;
+  }
+
+  .nav ul {
+    flex-direction: column;
+  }
+
+  .nav li {
+    margin: 10px 0;
+  }
+}

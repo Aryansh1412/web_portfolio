@@ -1,36 +1,36 @@
-import React, { useState } from 'react';
-import './Contact.css';
+import React, { useState } from "react";
+import "./Contact.css";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
+    name: "",
+    email: "",
+    message: "",
   });
-  const [successMessage, setSuccessMessage] = useState('');
+  const [successMessage, setSuccessMessage] = useState("");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
       ...formData,
-      [name]: value
+      [name]: value,
     });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic here
-    setSuccessMessage('Your message has been sent successfully!');
-    // Clear the form fields
+
+    setSuccessMessage("Your message has been sent successfully!");
+
+    // Clearing the form fields
     setFormData({
-      name: '',
-      email: '',
-      message: ''
+      name: "",
+      email: "",
+      message: "",
     });
 
- 
     setTimeout(() => {
-      setSuccessMessage('');
+      setSuccessMessage("");
     }, 2000);
   };
 
@@ -47,7 +47,7 @@ const Contact = () => {
           onChange={handleChange}
           required
         />
-        
+
         <label htmlFor="email">Email:</label>
         <input
           type="email"
@@ -57,7 +57,7 @@ const Contact = () => {
           onChange={handleChange}
           required
         />
-        
+
         <label htmlFor="message">Message:</label>
         <textarea
           id="message"
@@ -67,7 +67,7 @@ const Contact = () => {
           rows="5"
           required
         ></textarea>
-        
+
         <button type="submit">Send Message</button>
       </form>
       {successMessage && <p className="success-message">{successMessage}</p>}

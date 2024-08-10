@@ -2,19 +2,19 @@
   background: #ffffff;
   padding: 0 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  position: relative; /* For positioning social media icons */
+  position: relative;
 }
 
 .header-top {
   display: flex;
-  justify-content: flex-end; /* Align social media icons to the right */
+  justify-content: flex-end;
   padding: 10px 0;
-  border-bottom: 1px solid #ddd; /* Separator line */
+  border-bottom: 1px solid #ddd;
 }
 
 .social-media {
   display: flex;
-  gap: 15px; /* Space between social media icons */
+  gap: 15px;
 }
 
 .social-media a {
@@ -24,7 +24,7 @@
 }
 
 .social-media a:hover {
-  color: #007bff; /* Highlight color on hover */
+  color: #007bff;
 }
 
 .header-content {
@@ -40,7 +40,6 @@
 
 .header-section {
   text-align: center;
-
 }
 
 .header-section p {
@@ -60,13 +59,11 @@
   margin: 0;
   padding: 0;
   display: flex;
- 
 }
 
 .nav li {
   margin: 0 40px;
   font-weight: bold;
-  
 }
 
 .nav a {

@@ -1,18 +1,17 @@
 .footer {
-    padding: 20px;
-    background: #ffffff; /* White background for footer */
-    color: #666; /* Subtle grey text color */
-    text-align: center;
-    border-top: 1px solid #ddd; /* Light border to separate from the rest of the content */
-  }
-  
-  .footer p {
-    margin: 0;
-    font-size: 0.9rem;
-  }
-  
-  .footer-name {
-    font-weight: bold; /* Make name bold */
-    color: #333; /* Optional: change text color to dark grey */
-  }
-  
+  padding: 20px;
+  background: #ffffff;
+  color: #666;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.footer-name {
+  font-weight: bold;
+  color: #333;
+}
